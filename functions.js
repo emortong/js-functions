@@ -130,7 +130,13 @@ function numberToString(num){
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
+function isGreaterThan(x,y) {
+  if(x>y) {
+    return true;
+  } else {
+    return false;
+  };
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -138,6 +144,14 @@ function numberToString(num){
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
+
+ function isLessThan(x,y) {
+  if(x<y) {
+    return true;
+  } else {
+    return false;
+  }
+ }
 
 
 /**
@@ -147,6 +161,14 @@ function numberToString(num){
  * @return {boolean} the numbers are equal
  */
 
+ function areEqual(x,y) {
+  if(x===y) {
+    return true;
+  } else{
+    return false;
+  }
+ }
+
 
 /**
  * Returns the smallest value of two numbers.
@@ -154,6 +176,14 @@ function numberToString(num){
  * @param {number} y
  * @return {number} the smallest number
  */
+
+ function minimum(x,y) {
+  if(x>y) {
+    return y;
+  } else {
+    return x;
+  }
+ }
 
 
 /**
@@ -163,6 +193,13 @@ function numberToString(num){
  * @return {number} the largest number
  */
 
+function maximum(x,y) {
+  if(x>y){
+    return x;
+  } else {
+    return y;
+  }
+}
 
 /**
  * Returns true if `n` is even.
@@ -170,12 +207,27 @@ function numberToString(num){
  * @return {boolean} the number is even
  */
 
+ function isEven(n) {
+  if(n%2 ===0) {
+    return true;
+  } else{
+    return false;
+  }
+ }
+
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
+  function isOdd(n) {
+  if(n%2 ===0) {
+    return false;
+  } else{
+    return true;
+  }
+ }
 
 
 /**
