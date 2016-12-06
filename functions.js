@@ -268,6 +268,16 @@ function maximum(x,y) {
  * @return {object} restaurant
  */
 
+ function incrementReviews(restaurant) {
+    if(restaurant.hasOwnProperty("reviews")) {
+      restaurant.reviews = restaurant.reviews +1
+      console.log(restaurant.reviews)
+    } else {
+      restaurant.reviews = 1;
+    }
+    return restaurant;
+ }
+
 
 /**
  * Joins two strings with a space.
@@ -275,6 +285,10 @@ function maximum(x,y) {
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+
+ function combine(word1, word2) {
+  return word1 + " " + word2;
+ }
 
 
 /**
@@ -285,3 +299,10 @@ function maximum(x,y) {
  * @return {object} circle
  */
 
+function createCircle(radius) {
+  var circle = {
+    circumference: 2*Math.PI*radius,
+    area: Math.PI*radius*radius
+  }
+  return circle;
+}
