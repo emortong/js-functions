@@ -46,7 +46,7 @@ function numberToString(num){
  * @return {number} the difference
  */
 
- function sub(x,y) {
+ function subtract(x,y) {
   return x-y;
  };
 
@@ -57,7 +57,7 @@ function numberToString(num){
  * @param {number} y
  * @return {number} the product
  */
- function mult(x,y) {
+ function multiply(x,y) {
   return x*y;
  }
 
@@ -68,6 +68,9 @@ function numberToString(num){
  * @param {number} y
  * @return {number} the quotient
  */
+ function divide(x,y) {
+  return x/y;
+ };
 
 
 /**
@@ -75,6 +78,10 @@ function numberToString(num){
  * @param {number} x, number to be squared
  * @return {number} squared
  */
+
+ function square(x) {
+  return x*x;
+ };
 
 
 /**
@@ -85,6 +92,36 @@ function numberToString(num){
  * @param {number} y
  * @return {number} the result
  */
+ function calculate(operation,x,y) {
+    switch(operation) {
+      case 'add':
+      var addAns = x+y;
+      console.log(x + " + " + y + " = " + addAns);
+      return addAns;
+      break;
+
+      case 'subtract':
+      var subAns = x-y;
+      console.log(x + " - " + y + " = " + subAns);
+      return subAns;
+      break;
+
+      case 'multiply':
+      var multAns = x*y;
+      console.log(x + " * " + y + " = " + multAns);
+      return multAns;
+      break;
+
+      case 'divide':
+      var divAns = x/y;
+      console.log(x + " / " + y + " = " + divAns);
+      return divAns;
+      break;
+
+
+   }
+
+ };
 
 
 /**
