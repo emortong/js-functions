@@ -242,6 +242,23 @@ function maximum(x,y) {
  * @return {string} the score represented as a letter grade
  */
 
+ function letterGrade(score, total) {
+    var perc = Math.floor(score*100/total);
+
+    console.log(perc)
+    if(perc>= 90) {
+      return "A";
+    } else if (perc>=80 && perc <=89) {
+      return "B";
+    } else if(perc>=70 && perc <=79) {
+      return "C";
+    } else if(perc>=60 && perc <=69) {
+      return "D";
+    } else {
+      return "F"
+    }
+ }
+
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
