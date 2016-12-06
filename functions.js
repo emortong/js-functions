@@ -12,6 +12,9 @@ function numberToString(num){
  * @param {number} n
  * @return {number}
  */
+ function increase(num) {
+    return num+1;
+ }
 
 
 /**
@@ -19,6 +22,10 @@ function numberToString(num){
  * @param {number} n
  * @return {number}
  */
+ function decrease(num) {
+  return num-1;
+ }
+
 
 
 /**
@@ -27,6 +34,9 @@ function numberToString(num){
  * @param {number} y
  * @return {number} the sum
  */
+ function add(x,y) {
+  return x+y;
+ };
 
 
 /**
@@ -36,6 +46,10 @@ function numberToString(num){
  * @return {number} the difference
  */
 
+ function sub(x,y) {
+  return x-y;
+ };
+
 
 /**
  * Multiplies two numbers.
@@ -43,6 +57,9 @@ function numberToString(num){
  * @param {number} y
  * @return {number} the product
  */
+ function mult(x,y) {
+  return x*y;
+ }
 
 
 /**
